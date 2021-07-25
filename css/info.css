@@ -1,0 +1,54 @@
+/*header*/
+#header2  {
+	display: block;
+	text-align: right;
+
+}
+
+#header2 li {
+	display: inline;
+	width: 60%;
+}
+
+.pic_frame {
+	display: inline-block;
+	text-align: center;
+	line-height: 1em;
+}
+/*エラーメッセージ*/
+.error_msg {
+color: red;
+}
+
+/*カードリスト*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contents-box {
+	padding: 1.5rem;
+	width: 60%;
+	height: 50%;
+	margin-right: 10px;
+	background-color: #f0f0f0;
+	
+}
+
+.contents-box img {
+	display: block;
+	background-color: #77d9e6;
+	margin-bottom: 1rem;
+	width: 100%;
+	height: auto;
+}
+
+.main {
+	width: 70%;
+}
+
+.border {
+	border-bottom: double 6px #87CEFA;	
+}
+

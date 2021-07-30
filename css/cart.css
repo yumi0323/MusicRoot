@@ -1,0 +1,38 @@
+
+/* cart */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.text-right {
+  text-align: right;
+}
+
+  .cart-table th,
+  .cart-table td {
+      border: 1px solid #a4a6ad;
+      vertical-align: middle;
+      padding: 5px 10px;
+  }
+
+  .cart-table th {
+      background-color: #77d9e6;
+  }
+
+  .cart-table button {
+      margin: 0;
+  }
+
+  .total td{ 
+      text-align: center;
+  }
+
+  .cart-btn {
+      text-align: center;
+  }
+
+  img {
+    background-color: #77d9e6
+  }
+ 

@@ -1,0 +1,39 @@
+
+.wrapper {
+  display: flex;
+}
+
+.main {
+	background-color: #77d9e6;
+	width: 70%;
+	margin-left: 10px;
+}
+
+.contents-box {
+	padding: 1.5rem;
+	width: 22%;
+	height: 40%;
+	background-color: #f0f0f0;
+}
+
+.contents-box img {
+	display: block;
+	background-color: #77d9e6;
+	margin-bottom: 1rem;
+	width: 100%;
+	height: auto;
+}
+
+.contents-box p {
+	margin-bottom: 0.5rem;
+	line-height: 0.5;
+	font-size: 1rem;
+	text-align: center;
+}
+
+/*コメント一覧*/
+.box {
+	background-color: #f0f0f0;
+  height: 400px;
+	overflow-y: scroll;
+	}

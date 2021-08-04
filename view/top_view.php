@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ecサイト</title>
+  <title>MusicRoot</title>
   <link rel="stylesheet" href="./css/top.css">
 </head>
 <body>
 <header>
-  <h1>ecサイト</h1>
+  <h1>MusicRoot</h1>
 </header>
 <div id="header">
   <label>記事の検索</label>

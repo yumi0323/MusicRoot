@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ecサイト</title>
+  <title>MusicRoot</title>
   <link rel="stylesheet" href="./css/info.css">
 </head>
 <body>

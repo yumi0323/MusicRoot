@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ecサイト</title>
+  <title>MusicRoot</title>
 </head>
 <body>
 <h1>ようこそ、ログインしてください。</h1>

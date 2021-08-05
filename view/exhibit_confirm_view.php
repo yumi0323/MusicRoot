@@ -47,14 +47,14 @@
 			<p><?php echo h($category_name); ?></p>
 		<h2><span class="border">説明</span></h2>
 			<p><?php echo h($discription); ?></p>
+		<h2><span class="border">アーティスト名</span></h2>
 		<form method="post" action="exhibit_search.php">
 			<input type="hidden" name="token" value="<?php echo h($token); ?>">
 			<input type="submit" name="btn_back" value="アーティスト検索">
 		</form>
 <form method="post" action="exhibit.php">
-		<p><?php echo h($warning); ?></p>
-		<h2><span class="border">アーティスト名</span></h2>
-			<p><?php echo $singer; ?></p>
+		  <p><?php echo h($warning); ?></p>
+		  <p><?php echo $singer; ?></p>
 			<p><?php echo $singer_search; ?></p>
 		<input type="hidden" name="token" value="<?php echo h($token); ?>">
 	</div><!--mainの終わり-->

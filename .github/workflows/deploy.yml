@@ -1,0 +1,30 @@
+name: Deploy into production server
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: prepare .ssh dir
+        run: mkdir -p .ssh && chmod 700 .ssh
+      - name: ssh key generate
+        run: echo "$SSH_PRIVATE_KEY" > .ssh/id_rsa && chmod 600 .ssh/id_rsa
+        env:
+          SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: composer install
+        run: cd api ＆＆ composer install
+      - name: add permission
+        run: chmod -R g+w api ＆＆ sudo groupadd -f apache ＆＆ sudo chown -R :apache api
+      - name: push with rsync
+        run: rsync -rlptgoD -O --delete --exclude ".git/" -e "ssh -i .ssh/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p ${SSH_PORT}" dist/ $SSH_USER@$SSH_HOST:$DIR
+        env:
+          DIR: ~/public_html/musicroot2021.net
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
